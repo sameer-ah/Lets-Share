@@ -1,0 +1,9 @@
+.button-row{
+    position: sticky;
+    bottom: 10px;
+}
+
+.post-container{
+    height: 200px;
+    overflow: auto;
+}

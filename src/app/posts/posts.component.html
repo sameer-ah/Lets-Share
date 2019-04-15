@@ -1,0 +1,15 @@
+<mat-form-field class="new-post">
+  <textarea matInput placeholder="Lets Share?" [(ngModel)]="postText" matTextareaAutosize
+    #autosize="matTextareaAutosize" matAutosizeMinRows="3" matAutosizeMaxRows="3"></textarea>
+</mat-form-field>
+<button mat-raised-button (click)="createPost()">Post</button>
+
+<ul class="posts">
+  <li *ngFor="let post of posts"> 
+      <span class="timestamp">{{post.Timestamp}}</span>
+      {{post.Content}}
+      <button mat-icon-button (click)="onDeletePost(post)">
+        <mat-icon>delete</mat-icon>
+      </button>
+  </li>
+</ul>

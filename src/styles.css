@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/material-design-icons/iconfont/material-icons.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* To overcome the bootstrap style, since angular material menu items are buttons, first item is always should a box around it as it is focused. */
+button:focus{
+    outline: none;
+}
